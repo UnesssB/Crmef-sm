@@ -1,0 +1,123 @@
+:root {
+  /* ---------------------------------- */
+  /*               Colors               */
+  /* ---------------------------------- */
+
+  /* -------------- Reset ------------- */
+  --background: #fff;
+
+  /* -------------- Basic ------------- */
+  --white: #fff;
+  --black: #000;
+
+  /* ------------- Primary ------------ */
+  --primaryDark: #05322c;
+  --primary: #094b42;
+  --primaryLightest: #f2fffd;
+
+  /* -------------- Gray -------------- */
+  --grayLight: #eee;
+
+  /* ---------------------------------- */
+  /*                Fonts               */
+  /* ---------------------------------- */
+
+  /* -------- Family -------- */
+  --fontFamily: "Ubuntu", sans-serif;
+
+  /* -------------- Sizes ------------- */
+  --fontSizeRoot: 16px;
+  --fontSizeLarge: 1.5rem;
+
+  /* ---------------------------------- */
+  /*             Breakpoints            */
+  /* ---------------------------------- */
+
+  /* ---------- Large: 1100px --------- */
+}
+
+html {
+  box-sizing: border-box;
+  font-size: var(--fontSizeRoot);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: var(--fontFamily);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 30px;
+
+  font-size: 14px;
+  font-weight: 600;
+  border: 2px solid transparent;
+
+  border-radius: 50px;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+
+.button--outline {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.button--outline :hover {
+  background-color: var(--primaryLightest);
+}
+.button--inline {
+    color: var(--white);
+    background-color: var(--primary);
+  }
+  
+  .button--inline:hover {
+    background-color: var(--primaryDark);
+  }
+  
